@@ -13,15 +13,15 @@ namespace TimerExample
         {
             Timer myTimer = new Timer(2000);
 
-            myTimer.Elapsed += MyTimer_Elapsed;
-            myTimer.Elapsed += MyTimer_Elapsed1;            
+            myTimer.Elapsed += MyTimer_Elapsed;     // add cyan colored font to console
+            myTimer.Elapsed += MyTimer_Elapsed1;    // add red colored font to the console        
 
-            myTimer.Start();
+            myTimer.Start();                        // start the timer
 
             Console.WriteLine("Press enter to remove the red event");
             Console.ReadLine();
 
-            myTimer.Elapsed -= MyTimer_Elapsed1;
+            myTimer.Elapsed -= MyTimer_Elapsed1;    // remove the red colored font after pushing enter  
 
             Console.ReadLine();
         }
